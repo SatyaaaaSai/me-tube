@@ -1,11 +1,11 @@
 import React from "react";
-import SideBar from "./SideBar";
+import MenuItems from "./MenuItems";
 import MainContainer from "./MainContainer";
 
 const Body = () => {
   return (
     <div className="flex">
-     <SideBar/>
+     <MenuItems/>
      <MainContainer/>
     </div>
   );
