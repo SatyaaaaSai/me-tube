@@ -4,12 +4,11 @@ import { toggleMenu } from "../utils/appSlice";
 
 const Head = () => {
   const dispath = useDispatch();
-
   const handleMenu = () => {
     dispath(toggleMenu());
   };
   return (
-    <div className="grid grid-flow-col shadow-lg ">
+    <div className="grid grid-flow-col shadow-lg m-auto">
       <div className="flex col-span-1 mx-10">
         <img
           onClick={() => handleMenu()}
@@ -17,11 +16,13 @@ const Head = () => {
           alt="hamburger-menu"
           src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp"
         />
-        <img
-          className="w-24 h-16 cursor-pointer"
-          alt="youtube-logo"
-          src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6-1200-80.jpg"
-        />
+        <a href="/">
+          <img
+            className="w-24 h-16 cursor-pointer"
+            alt="youtube-logo"
+            src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6-1200-80.jpg"
+          />
+        </a>
       </div>
       <div className="col-span-10 my-5 mx-16">
         <input
