@@ -5,8 +5,10 @@ const VideoCard = ({ info }) => {
   const viewFormat=(count)=>{
     if(count>1000000){
         return (count/1000000).toFixed(2)+"M";
+    } else if(100000){
+       return (count/1000).toFixed(0)+"K"
     } else {
-       return count.toString();
+      return count.toString();
     }
   }
   //console.log(info);
